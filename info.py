@@ -13,7 +13,7 @@ def is_enabled(value, default):
         return default
 
 # Bot information
-SESSION = environ.get('SESSION', 'anymorethan')
+SESSION = environ.get('SESSION', 'howmorethan')
 API_ID = int(environ.get('API_ID', '16618598'))
 API_HASH = environ.get('API_HASH', '214100c128f8cfa17c7d96bb70d3f4e2')
 BOT_TOKEN = environ.get('BOT_TOKEN', "7719463672:AAEnoscXY92AunGkwACoSSjAtgd91CXc2ik")
@@ -52,7 +52,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "howmorethan")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'viralcollection')
 
 # Premium And Referal Settings
-PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', True)) # Set Ture Or False
+PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', False)) # Set Ture Or False
 
 # If PREMIUM_AND_REFERAL_MODE is True Then Fill Below Variable, If Flase Then No Need To Fill.
 REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '20')) # number of referal count
