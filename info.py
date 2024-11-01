@@ -16,7 +16,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'anymorethan')
 API_ID = int(environ.get('API_ID', '16618598'))
 API_HASH = environ.get('API_HASH', '214100c128f8cfa17c7d96bb70d3f4e2')
-BOT_TOKEN = environ.get('BOT_TOKEN', "8138801339:AAFP6vltaTUjUSKw4NaYZV07Q1jIlqrLEGc")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7719463672:AAEnoscXY92AunGkwACoSSjAtgd91CXc2ik")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
@@ -26,9 +26,9 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/How_To_Open_Linkl")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002448218326'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002493306660'))
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1761987754 6278810835').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002440045601 -1002299967220 -1002279748901').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002292887415').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1761987754 6278810835').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
@@ -47,9 +47,9 @@ FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-100
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://anymorethan:anymorethan@anymorethan.1w2t0.mongodb.net/?retryWrites=true&w=majority&appName=anymorethan")
-DATABASE_NAME = environ.get('DATABASE_NAME', "anymorethan")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'mariacollection')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://howmorethan:howmorethan@howmorethan.7zrtq.mongodb.net/?retryWrites=true&w=majority&appName=howmorethan")
+DATABASE_NAME = environ.get('DATABASE_NAME', "howmorethan")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'viralcollection')
 
 # Premium And Referal Settings
 PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', True)) # Set Ture Or False
